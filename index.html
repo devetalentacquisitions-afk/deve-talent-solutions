@@ -1,1 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DEVE Talent Solutions</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f8f9fb;
+color:#333;
+line-height:1.6;
+}
+
+header{
+background:#0c2340;
+color:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+letter-spacing:1px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(12,35,64,.85),rgba(12,35,64,.85)),
+url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding:0 8%;
+color:white;
+}
+
+.hero-content{
+max-width:700px;
+}
+
+.hero h1{
+font-size:58px;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+background:#d4af37;
+padding:15px 35px;
+text-decoration:none;
+color:#0c2340;
+font-weight:600;
+border-radius:5px;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+}
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:38px;
+margin-bottom:20px;
+color:#0c2340;
+}
+
+.section-sub{
+text-align:center;
+max-width:850px;
+margin:auto;
+margin-bottom:60px;
+color:#666;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:12px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#0c2340;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:12px;
+}
+
+.about p{
+margin-bottom:20px;
+}
+
+.stats{
+background:#0c2340;
+color:white;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+text-align:center;
+padding:70px 8%;
+}
+
+.stat h2{
+font-size:48px;
+color:#d4af37;
+}
+
+.contact{
+background:#eef2f5;
+text-align:center;
+}
+
+.contact p{
+margin-bottom:25px;
+}
+
+footer{
+background:#081624;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:42px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+nav{
+display:none;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">DEVE Talent Solutions</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#industries">Industries</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Connecting Africa's Leading Industries With Exceptional Talent</h1>
+
+<p>
+Specialist Recruitment & Executive Search across Mining, Oil & Gas, Infrastructure, Construction, Supply Chain and Quantity Surveying throughout Africa and international markets.
+</p>
+
+<a href="#contact" class="btn">Get In Touch</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About DEVE Talent Solutions</h2>
+
+<p class="section-sub">
+DEVE Talent Solutions is a specialist recruitment and executive search firm delivering world-class professionals to organizations operating across Africa's most demanding industries.
+</p>
+
+<div class="about">
+
+<div>
+
+<p>
+We have successfully partnered with leading private organizations, multinational corporations, government ministries, and state-owned enterprises to build high-performing leadership teams and recruit experienced expatriate and local professionals for some of Africa's most challenging and remote project locations.
+</p>
+
+<p>
+Our expertise spans the complete project lifecycle—from exploration, engineering, procurement, construction, and production to operations, maintenance, and project delivery.
+</p>
+
+<p>
+By combining market intelligence, targeted headhunting, and rigorous candidate assessment, we identify professionals with the technical expertise, leadership capability, and cultural fit our clients require.
+</p>
+
+</div>
+
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80">
+
+</div>
+
+</section>
+
+<section id="industries">
+
+<h2 class="section-title">Industries We Serve</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Mining</h3>
+<p>Exploration, production, operations, maintenance, engineering and leadership recruitment.</p>
+</div>
+
+<div class="card">
+<h3>Oil & Gas</h3>
+<p>Supporting upstream, midstream and downstream projects with specialist professionals.</p>
+</div>
+
+<div class="card">
+<h3>Infrastructure</h3>
+<p>Recruitment solutions for infrastructure developers and major civil projects.</p>
+</div>
+
+<div class="card">
+<h3>Construction</h3>
+<p>Experienced technical, commercial and project management professionals.</p>
+</div>
+
+<div class="card">
+<h3>Supply Chain</h3>
+<p>Procurement, logistics, contracts and supply chain specialists.</p>
+</div>
+
+<div class="card">
+<h3>Quantity Surveying</h3>
+<p>Commercial management and cost control experts across major developments.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="section-title">Our Recruitment Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Executive Search</h3>
+<p>Identifying senior leadership and executive professionals through targeted search strategies.</p>
+</div>
+
+<div class="card">
+<h3>Specialist Recruitment</h3>
+<p>Recruiting highly skilled professionals for niche and difficult-to-fill technical positions.</p>
+</div>
+
+<div class="card">
+<h3>Market Mapping</h3>
+<p>Comprehensive talent market research to identify the strongest candidates available.</p>
+</div>
+
+<div class="card">
+<h3>Headhunting</h3>
+<p>Direct sourcing of passive candidates through our extensive industry network.</p>
+</div>
+
+<div class="card">
+<h3>Candidate Assessment</h3>
+<p>Rigorous technical, leadership and cultural evaluations before every recommendation.</p>
+</div>
+
+<div class="card">
+<h3>International Recruitment</h3>
+<p>Placement of expatriate and local professionals across Africa and global markets.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stat">
+<h2>Africa</h2>
+<p>Specialist Recruitment Coverage</p>
+</div>
+
+<div class="stat">
+<h2>End-to-End</h2>
+<p>Project Lifecycle Expertise</p>
+</div>
+
+<div class="stat">
+<h2>Executive</h2>
+<p>Leadership Search Specialists</p>
+</div>
+
+<div class="stat">
+<h2>Quality</h2>
+<p>Over Quantity Recruitment Approach</p>
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2 class="section-title">Let's Build Your Team</h2>
+
+<p>
+Whether you're recruiting executive leaders, technical specialists, or project teams, DEVE Talent Solutions is ready to help you secure exceptional talent.
+</p>
+
+<a href="mailto:info@devetalentsolutions.com" class="btn">Contact Us</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 DEVE Talent Solutions. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
