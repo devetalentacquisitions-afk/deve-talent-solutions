@@ -11,78 +11,211 @@
 
 <style>
 
-body{
-font-family:'Poppins',sans-serif;
-background:#f8f9fb;
+*{
 margin:0;
-padding:40px;
-color:#333;
+padding:0;
+box-sizing:border-box;
 }
 
-h1{
+body{
+font-family:'Poppins',sans-serif;
+background:#F8FAFC;
+color:#111827;
+line-height:1.7;
+}
+
+header{
+background:#ffffff;
+padding:70px 20px;
 text-align:center;
-color:#0c2340;
-margin-bottom:50px;
+box-shadow:0 4px 18px rgba(0,0,0,.06);
+}
+
+header h1{
+font-size:42px;
+color:#2563EB;
+margin-bottom:15px;
+}
+
+header p{
+max-width:760px;
+margin:auto;
+font-size:18px;
+color:#4B5563;
+}
+
+.container{
+max-width:1200px;
+margin:60px auto;
+padding:0 20px;
 }
 
 .jobs{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+gap:35px;
+align-items:start;
 }
 
 .card{
-background:white;
-padding:30px;
-border-radius:12px;
-box-shadow:0 12px 30px rgba(0,0,0,.08);
+background:#ffffff;
+border-radius:18px;
+padding:35px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
 transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-8px);
+transform:translateY(-6px);
 }
 
 .card h2{
-color:#0c2340;
-margin-bottom:15px;
+color:#2563EB;
+margin-bottom:18px;
+font-size:28px;
 }
 
-.card p{
-margin:8px 0;
+.info{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-bottom:25px;
 }
 
-.btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 30px;
-background:#d4af37;
-color:#0c2340;
-text-decoration:none;
-border-radius:5px;
+.badge{
+background:#EFF6FF;
+color:#2563EB;
+padding:8px 14px;
+border-radius:50px;
+font-size:14px;
 font-weight:600;
 }
 
+.section-title{
+margin-top:30px;
+margin-bottom:12px;
+font-size:22px;
+color:#111827;
+}
+
+.card p{
+margin-bottom:14px;
+}
+
+.card ul{
+padding-left:22px;
+margin-bottom:20px;
+}
+
+.card li{
+margin-bottom:10px;
+}
+
+.salary{
+background:#2563EB;
+color:#fff;
+padding:15px;
+border-radius:12px;
+font-size:18px;
+font-weight:600;
+margin:20px 0;
+text-align:center;
+}
+
+.apply-box{
+background:#F8FAFC;
+padding:25px;
+border-radius:15px;
+margin-top:30px;
+}
+
+.apply-box h3{
+margin-bottom:15px;
+color:#2563EB;
+}
+
+form input{
+width:100%;
+padding:14px;
+margin-bottom:16px;
+border:1px solid #D1D5DB;
+border-radius:10px;
+font-size:15px;
+font-family:'Poppins',sans-serif;
+}
+
+form input:focus{
+outline:none;
+border-color:#2563EB;
+}
+
+.btn{
+width:100%;
+padding:15px;
+background:#2563EB;
+color:#fff;
+border:none;
+border-radius:10px;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
 .btn:hover{
-background:#0c2340;
-color:white;
+background:#1D4ED8;
+}
+
+.email-btn{
+display:block;
+margin-top:15px;
+text-align:center;
+padding:15px;
+background:#111827;
+color:#fff;
+text-decoration:none;
+border-radius:10px;
+font-weight:600;
+transition:.3s;
+}
+
+.email-btn:hover{
+background:#2563EB;
+}
+
+footer{
+margin-top:70px;
+background:#111827;
+color:#fff;
+padding:35px;
+text-align:center;
 }
 
 .back{
-display:block;
-width:180px;
-margin:50px auto 0;
-text-align:center;
+display:inline-block;
+margin-top:25px;
+padding:14px 28px;
+background:#2563EB;
+color:#fff;
 text-decoration:none;
-padding:14px;
-background:#0c2340;
-color:white;
-border-radius:6px;
+border-radius:10px;
+font-weight:600;
 }
 
 .back:hover{
-background:#d4af37;
-color:#0c2340;
+background:#1D4ED8;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:34px;
+}
+
+.card{
+padding:25px;
+}
+
 }
 
 </style>
@@ -91,224 +224,300 @@ color:#0c2340;
 
 <body>
 
+<header>
+
 <h1>Current Opportunities</h1>
 
+<p>
+Explore our latest construction and commercial opportunities.
+If you're looking for your next career move, we'd love to hear from you.
+Submit your CV directly through the application form below.
+</p>
 
+</header>
 
+<div class="container">
 
-</div>
+<div class="jobs"><!-- ========================= -->
+<!-- Junior Quantity Surveyor -->
+<!-- ========================= -->
 
 <div class="card">
-<h2>Juniour Quantity Surveyor</h2>
-<p><strong>Industry:</strong> Construction</p>
-<p><strong>Location:</strong> London</p>
-<p><strong>Employment Type:</strong> Permanent</p>
-<p>Junior Quantity Surveyor – Roofing Construction Industry
-<div class="job-details">
 
-<h2>Junior Quantity Surveyor – Roofing Construction Industry</h2>
+<h2>Junior Quantity Surveyor</h2>
 
-<h3>📍 Location</h3>
-<p>London</p>
+<div class="info">
+<span class="badge">Construction</span>
+<span class="badge">London</span>
+<span class="badge">Permanent</span>
+<span class="badge">Full-Time</span>
+</div>
 
-<h3>💰 Salary</h3>
-<p>£30,000+ per annum + Benefits (depending on experience)</p>
+<div class="salary">
+£30,000+ per annum + Benefits
+</div>
 
-<h3>💼 Job Type</h3>
-<p>Full-time, Permanent</p>
+<p>
+We are seeking a motivated and enthusiastic <strong>Junior Quantity Surveyor</strong>
+to join our client's growing commercial team within the roofing construction
+industry. This is an excellent opportunity for a recent graduate or someone with
+1–3 years' experience looking to develop their career in quantity surveying.
+</p>
 
-<hr>
+<p>
+Working alongside experienced Quantity Surveyors and Project Managers, you will
+gain hands-on experience across estimating, procurement, cost control,
+valuations and final accounts while receiving ongoing training and mentoring.
+</p>
 
-<h3>About the Role</h3>
-
-<p>We are seeking a motivated and enthusiastic Junior Quantity Surveyor to join our client's growing commercial team division, based in London, within the roofing construction industry. This is an excellent opportunity for a recent graduate or an individual with 1–3 years' experience looking to develop their career in quantity surveying.</p>
-
-<p>Working alongside experienced Quantity Surveyors and Project Managers, you will gain hands-on experience across all commercial aspects of roofing projects, from tendering and procurement through to cost control, valuations, and final accounts. You will receive ongoing training and support to develop your technical knowledge and commercial skills while contributing to the successful delivery of high-quality roofing projects.</p>
-
-<hr>
-
-<h3>Key Responsibilities</h3>
+<h3 class="section-title">Key Responsibilities</h3>
 
 <ul>
-<li>Assist with the preparation of cost estimates, budgets, and tender submissions for roofing projects.</li>
-<li>Measure quantities from drawings, specifications, and site surveys.</li>
-<li>Support the preparation of Bills of Quantities (BOQs), cost plans, and pricing schedules.</li>
-<li>Obtain quotations from suppliers and subcontractors.</li>
-<li>Assist in the procurement of roofing materials and subcontract packages.</li>
-<li>Prepare documentation for interim valuations and payment applications.</li>
-<li>Assess subcontractor applications and payment recommendations.</li>
-<li>Monitor project costs, budgets, and cash flow.</li>
-<li>Assist with variations, change orders, and final accounts.</li>
-<li>Maintain accurate commercial records and reports.</li>
-<li>Attend site visits and progress meetings.</li>
-<li>Liaise with Project Managers, clients, suppliers, and subcontractors.</li>
-<li>Monitor labour, material, and plant costs.</li>
-<li>Ensure compliance with company procedures and health & safety requirements.</li>
-<li>Assist with contract administration (JCT & NEC).</li>
-<li>Carry out general commercial and administrative duties.</li>
+<li>Assist with preparing cost estimates and tender submissions.</li>
+<li>Measure quantities from drawings and specifications.</li>
+<li>Support preparation of Bills of Quantities (BOQs).</li>
+<li>Obtain supplier and subcontractor quotations.</li>
+<li>Assist with procurement of roofing materials.</li>
+<li>Prepare interim valuations and payment applications.</li>
+<li>Monitor project costs and budgets.</li>
+<li>Assist with variations and final accounts.</li>
+<li>Maintain commercial records and reports.</li>
+<li>Attend site visits and project meetings.</li>
+<li>Liaise with clients, suppliers and subcontractors.</li>
+<li>Monitor labour, plant and material costs.</li>
+<li>Ensure compliance with company procedures.</li>
+<li>Assist with JCT and NEC contract administration.</li>
+<li>Provide general commercial support.</li>
 </ul>
 
-<hr>
-
-<h3>Skills & Experience</h3>
-
-<h4>Essential</h4>
+<h3 class="section-title">Essential Skills & Experience</h3>
 
 <ul>
-<li>Degree, HNC/HND, or equivalent in Quantity Surveying, Construction Management, or similar.</li>
+<li>Degree, HNC/HND or equivalent in Quantity Surveying or Construction Management.</li>
 <li>1–3 years' Quantity Surveying experience.</li>
 <li>Basic understanding of JCT and NEC contracts.</li>
-<li>Knowledge of estimating, procurement, cost control, and valuations.</li>
-<li>Strong numerical and analytical skills.</li>
+<li>Knowledge of estimating, procurement and cost control.</li>
 <li>Excellent Microsoft Excel skills.</li>
-<li>Excellent communication skills.</li>
-<li>Strong organisational and time management skills.</li>
-<li>Proactive attitude and willingness to learn.</li>
+<li>Strong communication and organisational skills.</li>
+<li>A proactive attitude with willingness to learn.</li>
 <li>Full UK Driving Licence.</li>
 </ul>
 
-<h4>Desirable</h4>
+<h3 class="section-title">Desirable</h3>
 
 <ul>
-<li>Roofing, cladding or building envelope experience.</li>
+<li>Roofing or cladding experience.</li>
 <li>Knowledge of BOQs and quantity take-offs.</li>
-<li>Experience with Quantity Surveying software.</li>
+<li>Experience using Quantity Surveying software.</li>
 <li>Knowledge of construction health & safety.</li>
 <li>Working towards RICS or CIOB membership.</li>
 </ul>
 
-<hr>
-
-<h3>What We Offer</h3>
+<h3 class="section-title">Benefits</h3>
 
 <ul>
-<li>Competitive salary of £30,000+ per annum.</li>
-<li>Company benefits package.</li>
-<li>Training, mentoring and professional development.</li>
-<li>Excellent career progression opportunities.</li>
-<li>Exposure to a variety of roofing projects.</li>
-<li>Support towards professional qualifications.</li>
-<li>Friendly and supportive working environment.</li>
+<li>Competitive salary.</li>
 <li>Company pension scheme.</li>
 <li>25 days annual leave plus Bank Holidays.</li>
-<li>Work alongside experienced commercial teams.</li>
+<li>Training and mentoring.</li>
+<li>Professional development support.</li>
+<li>Career progression opportunities.</li>
+<li>Friendly and supportive working environment.</li>
+<li>Exposure to a variety of roofing projects.</li>
 </ul>
 
-<hr>
+<div class="apply-box">
 
-<h3>Apply Now</h3>
-
-<p>If you are looking to develop your career as a Junior Quantity Surveyor within the roofing construction industry, we'd love to hear from you.</p>
-
-<p><strong>Email your updated CV to:</strong></p>
+<h3>Apply for this Position</h3>
 
 <p>
-<a href="mailto:devetalentacquisitions@gmail.com?subject=Application%20for%20Junior%20Quantity%20Surveyor">
-devetalentacquisitions@gmail.com
-</a>
+Complete the application form below and upload your CV.
 </p>
 
-<p><em>We thank all applicants for their interest; however, only those shortlisted for interview will be contacted.</em></p>
+<form action="https://formspree.io/f/xrenoajz"
+method="POST"
+enctype="multipart/form-data">
+
+<input
+type="text"
+name="name"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+name="email"
+placeholder="Email Address"
+required>
+
+<input
+type="tel"
+name="phone"
+placeholder="Phone Number">
+
+<input
+type="file"
+name="cv"
+accept=".pdf,.doc,.doc,.docx"
+required>
+
+<button
+type="submit"
+class="btn">
+Submit Application
+</button>
+
+</form>
+
+<a
+href="mailto:devetalentacquisitions@gmail.com?subject=Application%20for%20Junior%20Quantity%20Surveyor"
+class="email-btn">
+Apply by Email Instead
+</a>
 
 </div>
 
-<p>If you're interested in this role, complete the form below.</p>
-
-<form action="https://formspree.io/f/xrenoajz" method="POST" enctype="multipart/form-data">
-
-
-  <input type="text" name="name" placeholder="Full Name" required><br><br>
-
-  <input type="email" name="email" placeholder="Email Address" required><br><br>
-
-  <input type="tel" name="phone" placeholder="Phone Number"><br><br>
-
-  <input type="file" name="cv" accept=".pdf,.doc,.docx" required><br><br>
-
- 
-</form>
-
-
-<a href="mailto:devetalentacquisitions@gmail.com?subject=Application for Senior Quantity Surveyor" class="btn">
-Apply Now
+</div><!-- ========================= -->
+<!-- Quantity Surveyor -->
+<!-- ========================= -->
 
 <div class="card">
-<h2>Quantity Surveyor(Roofing Construction Industry)</h2>
-<p><strong>Industry:</strong> Construction</p>
-<p><strong>Location:</strong> London</p>
-<p><strong>Employment Type:</strong> Full-time</p>
-<p><h2>About the Role</h2>
-<p>We are looking for an experienced Quantity Surveyor to join our client's roofing division in London. You will be responsible for the commercial management of roofing projects from tender through to final account, ensuring projects are delivered on time, within budget, and to the highest commercial standards.</p>
 
-<h2>Key Responsibilities</h2>
+<h2>Quantity Surveyor</h2>
+
+<div class="info">
+<span class="badge">Construction</span>
+<span class="badge">Roofing</span>
+<span class="badge">London</span>
+<span class="badge">Full-Time</span>
+</div>
+
+<div class="salary">
+£55,000 per annum + Benefits
+</div>
+
+<p>
+We are looking for an experienced <strong>Quantity Surveyor</strong> to join our client's roofing division in London. You will be responsible for the commercial management of roofing projects from tender through to final account, ensuring projects are delivered on time, within budget and to the highest commercial standards.
+</p>
+
+<h3 class="section-title">Key Responsibilities</h3>
+
 <ul>
 <li>Manage the commercial delivery of multiple roofing projects.</li>
-<li>Prepare cost estimates, budgets, valuations, and final accounts.</li>
+<li>Prepare cost estimates, budgets, valuations and final accounts.</li>
 <li>Procure and manage subcontractors and suppliers.</li>
-<li>Negotiate contracts, rates, and variations.</li>
-<li>Monitor project costs, cash flow, and profitability.</li>
-<li>Prepare CVRs, forecasts, and commercial reports.</li>
-<li>Ensure compliance with JCT, NEC, and other contracts.</li>
+<li>Negotiate contracts, rates and variations.</li>
+<li>Monitor project costs, cash flow and profitability.</li>
+<li>Prepare CVRs, forecasts and commercial reports.</li>
+<li>Ensure compliance with JCT and NEC contracts.</li>
 <li>Identify and manage commercial risks.</li>
-<li>Provide commercial support to project teams and clients.</li>
-<li>Build and maintain strong client and supplier relationships.</li>
+<li>Support Project Managers throughout project delivery.</li>
+<li>Develop and maintain strong client relationships.</li>
 </ul>
 
-<h2>Qualifications & Experience</h2>
+<h3 class="section-title">Qualifications & Experience</h3>
+
 <ul>
-<li>Degree, HNC/HND, or equivalent in Quantity Surveying or a related discipline.</li>
-<li>Minimum 5 years' Quantity Surveying experience (roofing preferred).</li>
-<li>Strong knowledge of JCT and NEC contracts.</li>
-<li>Excellent commercial, negotiation, and communication skills.</li>
-<li>Proficient in Microsoft Office, particularly Excel.</li>
-<li>Full UK driving licence.</li>
+<li>Degree, HNC/HND or equivalent in Quantity Surveying or a related discipline.</li>
+<li>Minimum 5 years' Quantity Surveying experience.</li>
+<li>Roofing, cladding or building envelope experience preferred.</li>
+<li>Excellent knowledge of JCT and NEC contracts.</li>
+<li>Strong commercial and negotiation skills.</li>
+<li>Excellent Microsoft Excel and Office skills.</li>
+<li>Excellent communication and organisational skills.</li>
+<li>Full UK Driving Licence.</li>
 </ul>
 
-<h2>Desirable</h2>
+<h3 class="section-title">Desirable</h3>
+
 <ul>
-<li>RICS membership or working towards chartership.</li>
-<li>Experience across commercial, residential, industrial, or public sector projects.</li>
-<li>Knowledge of roofing, cladding, waterproofing, or building envelope systems.</li>
+<li>RICS membership or working towards Chartership.</li>
+<li>Experience across commercial, residential or industrial projects.</li>
+<li>Knowledge of waterproofing and roofing systems.</li>
 </ul>
 
-<h2>Salary & Benefits</h2>
+<h3 class="section-title">Benefits</h3>
+
 <ul>
-<li>£55,000 per annum.</li>
+<li>Competitive salary.</li>
 <li>Performance-related bonus.</li>
-<li>Company pension.</li>
-<li>25 days' annual leave plus Bank Holidays.</li>
-<li>Training and professional development.</li>
+<li>Company pension scheme.</li>
+<li>25 days annual leave plus Bank Holidays.</li>
+<li>Professional development and training.</li>
 <li>Career progression opportunities.</li>
+<li>Supportive working environment.</li>
 </ul>
 
-<h2>Apply</h2>
+<div class="apply-box">
 
-<p>If you're interested in this role, complete the form below.</p>
+<h3>Apply for this Position</h3>
 
-<form action="https://formspree.io/f/xrenoajz" method="POST" enctype="multipart/form-data">
+<p>
+Complete the application form below and upload your CV.
+</p>
 
+<form action="https://formspree.io/f/xrenoajz"
+method="POST"
+enctype="multipart/form-data">
 
-  <input type="text" name="name" placeholder="Full Name" required><br><br>
+<input
+type="text"
+name="name"
+placeholder="Full Name"
+required>
 
-  <input type="email" name="email" placeholder="Email Address" required><br><br>
+<input
+type="email"
+name="email"
+placeholder="Email Address"
+required>
 
-  <input type="tel" name="phone" placeholder="Phone Number"><br><br>
+<input
+type="tel"
+name="phone"
+placeholder="Phone Number">
 
-  <input type="file" name="cv" accept=".pdf,.doc,.docx" required><br><br>
+<input
+type="file"
+name="cv"
+accept=".pdf,.doc,.docx"
+required>
 
- 
+<button
+type="submit"
+class="btn">
+Submit Application
+</button>
+
 </form>
 
-
-<a href="mailto:devetalentacquisitions@gmail.com?subject=Application for Senior Quantity Surveyor" class="btn">
-Apply Now
+<a
+href="mailto:devetalentacquisitions@gmail.com?subject=Application%20for%20Quantity%20Surveyor"
+class="email-btn">
+Apply by Email Instead
 </a>
 
 </div>
 
 </div>
 
-<a href="index.html" class="back">← Back to Home</a>
+</div>
+
+</div>
+
+<footer>
+
+<p><strong>DEVE Talent Solutions</strong></p>
+
+<p>
+Connecting exceptional talent with leading employers across the construction industry.
+</p>
+
+<a href="index.html" class="back">
+← Back to Home
+</a>
+
+</footer>
 
 </body>
 </html>
